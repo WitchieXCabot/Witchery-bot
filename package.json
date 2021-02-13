@@ -1,0 +1,18 @@
+{
+  "name": "tester-witchery",
+  "version": "1.0.0",
+  "description": "tester for Witchery",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node .",
+    "lint": "eslint ."
+  },
+  "author": "Witch",
+  "license": "ISC",
+  "dependencies": {
+    "aztro-js": "^0.1.5",
+    "discord.js": "^12.5.1",
+    "node-fetch": "^2.6.1"
+  }
+}
