@@ -13,7 +13,7 @@ module.exports = {
         .setTimestamp()
         .addField(':woman_mage: Witchy Commands :mage:', `**Wcleansing**- All the cleansing information you need 
          **Wevents**- Gives you a full list of 2021 celestial events 
-         **Wfacts**- Gives you random facts and tips on witchcraft! 
+         **Wfact**- Gives you random facts and tips on witchcraft! 
          **Wfullmoon**- Gives you a list of 2021 Full moons with the dates, names and horoscope 
          **Wherbs**- Get a list of herbs and there correspondences 
          **Wmoon**- Sends you when the next full/New moon is 

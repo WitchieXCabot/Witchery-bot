@@ -83,9 +83,6 @@ client.on('message', message =>{
     } else if (command ===  'ms'){
         client.commands.get('ms').execute(message, args);
 
-    } else if (command === 'aries'){
-        client.commands.get('aries').execute(message, args);
-    
     } else if (command === 'animal'){
         client.commands.get('animal').execute(message, args);
     
@@ -101,9 +98,6 @@ client.on('message', message =>{
 
     } else if (command === 'uptime'){
         client.commands.get('uptime').execute(message, args);
-
-    } else if (command === 'pingtest'){
-        client.commands.get('pingtest').execute(message, args);
 
     } else if(command === 'ping') {
         client.commands.get('ping').execute(message, args);
