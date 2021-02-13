@@ -6,7 +6,7 @@ const fetch = require('node-fetch');
 
 const querystring = require('querystring');
 
-const prefix = 'TW';
+const prefix = 'W';
 
 const fs = require('fs');
 
@@ -119,7 +119,7 @@ client.on('message', message =>{
        
     } else if(command === 'update'){
         client.commands.get('update').execute(message, args);
-        
+
     }
     
 });
