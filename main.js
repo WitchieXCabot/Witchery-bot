@@ -117,6 +117,9 @@ client.on('message', message =>{
     } else if(command === 'ping') {
         client.commands.get('ping').execute(message, args);
        
+    } else if(command === 'update'){
+        client.commands.get('update').execute(message, args);
+        
     }
     
 });
