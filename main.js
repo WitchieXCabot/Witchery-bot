@@ -24,10 +24,25 @@ for(const file of commandFiles){
 }
 
 
-client.once('ready', () => {
-    console.log('Tester/witchery is now online!');
-    client.user.setActivity('Witchery 3.0!!', { type: 'PLAYING' }).catch(console.error);
+client.on('ready', () => {
+    try {
+      let serverIn = client.guilds.size;
+      console.log(`${client.user.tag} successfully logged in!`);
+      
+      function pickStatus() {
+        let status = ['Use Whelp for help!', 'witcherybot.xyz', 'Witchery 0.3.0!!!', 'Our prefix is W', `${client.guilds.cache.size} servers`];
+        let Status = Math.floor(Math.random() * status.length);
+  
+        client.user.setActivity(status[Status], {
+          type: "WATCHING"
+        });
+      };
+      setInterval(pickStatus, 9000);
+    } catch (err) {
+      console.log(err);
+    }
 });
+  
 
 client.on('message', message =>{
     if(!message.content.startsWith(prefix) || message.author.bot) return;
