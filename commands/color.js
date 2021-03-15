@@ -22,6 +22,7 @@ module.exports = {
                { name: 'TAROT', value: 'The Fool', inline: true}
             )
              .setColor("#D21F3C")
+             .setFooter('There are all possible meanings!')
              .setTimestamp()
             await message.channel.send(white);
     
@@ -40,6 +41,7 @@ module.exports = {
                 { name: 'TAROT', value: ' The Magi, Suit of Cups, the four Fives.', inline: true}
             )
              .setColor("#D21F3C")
+             .setFooter('There are all possible meanings!')
              .setTimestamp()
             await message.channel.send(red);
 
@@ -58,6 +60,7 @@ module.exports = {
                 { name: 'TAROT', value: 'The four Knights and the four Sixes.', inline: true}
             )
              .setColor("#D21F3C")
+             .setFooter('There are all possible meanings!')
              .setTimestamp()
             await message.channel.send(yellow);
 
@@ -76,6 +79,7 @@ module.exports = {
                 { name: 'TAROT', value: 'The Heirophant and the Suit of Cups', inline: true}
             )
              .setColor("#D21F3C")
+             .setFooter('There are all possible meanings!')
              .setTimestamp()
             await message.channel.send(blue);
 
@@ -94,6 +98,7 @@ module.exports = {
                 { name: 'TAROT', value: 'the four Queens and the four Threes.', inline: true}
             )
              .setColor("#D21F3C")
+             .setFooter('There are all possible meanings!')
              .setTimestamp()
             await message.channel.send(Black);
 
@@ -114,6 +119,7 @@ module.exports = {
                 { name: 'TAROT', value: 'The Emperor and the four Sevens again. Sometimes the Aces!', inline: true}
             )
              .setColor("#D21F3C")
+             .setFooter('There are all possible meanings!')
              .setTimestamp()
             await message.channel.send(Green);
 
@@ -134,6 +140,7 @@ module.exports = {
                 { name: 'TAROT', value: 'None attributed', inline: true}
             )
              .setColor("#D21F3C")
+             .setFooter('There are all possible meanings!')
              .setTimestamp()
             await message.channel.send(Gold);
 
@@ -152,6 +159,7 @@ module.exports = {
                 { name: 'TAROT', value: 'the four Sevens.', inline: true}
             )
              .setColor("#D21F3C")
+             .setFooter('There are all possible meanings!')
              .setTimestamp()
             await message.channel.send(Pink);
 
@@ -172,6 +180,7 @@ module.exports = {
                 { name: 'TAROT', value: 'The four Eights.', inline: true}
             )
              .setColor("#D21F3C")
+             .setFooter('There are all possible meanings!')
              .setTimestamp()
             await message.channel.send(Orange);
 
@@ -192,6 +201,7 @@ module.exports = {
                 { name: 'TAROT', value: 'the four Pages and the four Tens', inline: true}
             )
              .setColor("#D21F3C")
+             .setFooter('There are all possible meanings!')
              .setTimestamp()
             await message.channel.send(Brown);
 
@@ -210,6 +220,7 @@ module.exports = {
                 { name: 'TAROT', value: 'The Chariot and the four Fours.', inline: true}
             )
              .setColor("#D21F3C")
+             .setFooter('There are all possible meanings!')
              .setTimestamp()
             await message.channel.send(Purple);
 
@@ -228,6 +239,7 @@ module.exports = {
                 { name: 'TAROT', value: 'The Hanged Man, the four Threes', inline: true}
             )
              .setColor("#D21F3C")
+             .setFooter('There are all possible meanings!')
              .setTimestamp()
             await message.channel.send(Gray);
 
@@ -246,6 +258,7 @@ module.exports = {
                 { name: 'TAROT', value: 'None attributed.', inline: true}
             )
              .setColor("#D21F3C")
+             .setFooter('There are all possible meanings!')
              .setTimestamp()
             await message.channel.send(Silver);
         }
