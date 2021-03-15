@@ -30,7 +30,7 @@ client.on('ready', () => {
       console.log(`${client.user.tag} successfully logged in!`);
       
       function pickStatus() {
-        let status = ['Use Whelp for help!', 'witcherybot.xyz', 'Witchery 0.3.0!!!', 'Our prefix is W', `${client.guilds.cache.size} servers`];
+        let status = ['Use Whelp for help!', 'witcherybot.xyz', 'Witchery 0.3.1!!!', 'Our prefix is W', `${client.guilds.cache.size} servers`];
         let Status = Math.floor(Math.random() * status.length);
   
         client.user.setActivity(status[Status], {
@@ -122,7 +122,7 @@ client.on('message', message =>{
 
     } else if (command === 'color'){
         client.commands.get('color').execute(message, args);
-        
+
     }
     
 });
