@@ -120,6 +120,9 @@ client.on('message', message =>{
     } else if(command === 'update'){
         client.commands.get('update').execute(message, args);
 
+    } else if (command === 'color'){
+        client.commands.get('color').execute(message, args);
+        
     }
     
 });

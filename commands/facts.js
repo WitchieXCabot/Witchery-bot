@@ -38,7 +38,6 @@ module.exports = {
             "Consider the mundane stores for most staple goods such as candles or herbs. ",
             "Thrift stores are amazing. Just sayin’. Be sure to cleanse whatever you do buy from there, though. ",
             "If you use Florida Water, there are recipes out there to make your own at home. You simply need alcohol, some herbs, and some flowers. ",
-            "Why didn't the vampire attack Taylor Swift? She had bad blood.",
             "Essential oils and incense can give your room a nice scent, and can be used to cleanse your space.",
             "For those who can’t have a physical grimoire/book of shadows/spell book, Google drive, tumblr, and Pinterest are all good options.",
             "Runes can be painted/written onto coins, stones, or even bits of paper if you’re in a tight spot. ",
