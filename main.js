@@ -123,6 +123,9 @@ client.on('message', message =>{
     } else if (command === 'color'){
         client.commands.get('color').execute(message, args);
 
+    } else if (command === 'rune'){
+        client.commands.get('rune').execute(message, args);
+        
     }
     
 });
