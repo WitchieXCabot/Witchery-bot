@@ -44,6 +44,17 @@ client.on('ready', () => {
 });
   
 
+
+const { ShardingManager } = require('discord.js');
+const manager = new ShardingManager('./bot.js', { token: 'NzgwMzQxMzU0Mzc5MDgzNzk3.X7trhA.iVuTbhwlRt1jagKgb_d61NGnk5E' });
+
+manager.on('shardCreate', shard => console.log(`Launched shard ${shard.id}`));
+manager.spawn();
+
+
+
+
+
 client.on('message', message =>{
     if(!message.content.startsWith(prefix) || message.author.bot) return;
 
