@@ -1,6 +1,6 @@
 const { Client } = require('discord.js');
 const client = new Client();
-const prefix = 'TW';
+const prefix = 'W';
 
 
 client.on('message', message => {
