@@ -10,9 +10,9 @@ module.exports = {
             if (rando == 1){
                 let Panda = new Discord.MessageEmbed()
                 .setTitle('Panda')
+                .description('pandaaaaaaaaa')
 
-                await message.channel.send(Panda);
-                message.react('828159156782891038');
+                await message.channel.send(Panda).then( sent => {sent.react('828159156782891038')});
             }
             else if (rando == 2){
                 let dog = new Discord.MessageEmbed()
