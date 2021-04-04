@@ -286,10 +286,21 @@ client.on("message", async message => {
 
 
 
+
+
 client.on('message', message => {
-	if (message.content === 'Winsect') {
-		message.channel.send('BUGGGGG').then( sent => {sent.Message.react('🐛','🐞', '🐜', '🦗', '🦟')});
-	}
+    if (message.content === 'Winsect') {
+            let bug = new Discord.MessageEmbed()
+            .setTitle('INSECT')
+            .setDescription(`BUGGGGGG`)
+            .setColor("#D21F3C")
+    message.channel.send(bug).then(sent => {
+        sent.react('🐛')
+        sent.react('🐞')
+        sent.react('🐜')
+        sent.react('🦗')
+        sent.react('🦟')});
+    }
 });
 
 
