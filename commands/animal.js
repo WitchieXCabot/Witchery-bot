@@ -12,7 +12,7 @@ module.exports = {
                 .setTitle('Panda')
                 .setDescription('pandaaaaaaaaa')
 
-                await message.channel.send(Panda).then( sent => {sent.react(':panda_face:')});
+                await message.channel.send(Panda).then( sent => {sent.react('🐼')});
             }
             else if (rando == 2){
                 let dog = new Discord.MessageEmbed()
