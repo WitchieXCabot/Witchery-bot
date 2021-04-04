@@ -282,12 +282,6 @@ client.on("message", async message => {
 })
 
 
-
-
-
-
-
-
 client.on('message', message => {
     if (message.content === 'Winsect') {
             let bug = new Discord.MessageEmbed()
@@ -299,7 +293,8 @@ client.on('message', message => {
         sent.react('🐞')
         sent.react('🐜')
         sent.react('🦗')
-        sent.react('🦟')});
+        sent.react('🦟')
+        sent.react(':cockroach:')});
     }
 });
 
