@@ -288,11 +288,7 @@ client.on("message", async message => {
 
 client.on('message', message => {
 	if (message.content === 'Winsect') {
-		message.channel.send('BUGGGGG').then( sent => {sent.react('🐛')})
-        .then( sent => {sent.react('🐞')})
-        .then( sent => {sent.react('🐜')})
-        .then( sent => {sent.react('🦗')})
-        .then( sent => {sent.react('🦟')});
+		message.channel.send('BUGGGGG').then( sent => {sent.react('🐛','🐞', '🐜', '🦗', '🦟')});
 	}
 });
 
