@@ -6,7 +6,7 @@ module.exports = {
     description: "this is send you a random animal with a pic!",
     execute(message, args) {
         var animals = [
-            "Panda '<828159156782891038>'",
+            "Panda '<a:pandarolypoly:655829298103451658>'",
             "dog '<489818863341535247>'",
             "bird",
             "cat",
