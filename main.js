@@ -294,7 +294,7 @@ client.on('message', message => {
         sent.react('🐜')
         sent.react('🦗')
         sent.react('🦟')
-        sent.react(':cockroach:')});
+        sent.react('828328637224714240')});
     }
 });
 
