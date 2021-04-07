@@ -23,7 +23,7 @@ module.exports = {
          **Wshadow**- Get information on shadow work `)
         .addFields(
             { name: '\u200B', value: '\u200B' },
-            { name: ':crystal_ball: Divination Commands :crystal_ball:', value: '`Wcoin`- flips a coin \ `Weightball`- Rolls a eight ball \ `Wcolor`- Gives you a color and its corrispondences / `Wrune`- Get a rune and meaning', inline: false },
+            { name: ':crystal_ball: Divination Commands :crystal_ball:', value: '`Wcoin`- flips a coin \ `Weightball`- Rolls a eight ball \ `Wcolor`- Gives you a color and its corrispondences \ `Wrune`- Get a rune and meaning \ `Woracle` - get a oracle reading every 12 hours!', inline: false },
             { name: ':rofl: Fun Commands :rofl:', value: '`Wdadjoke`- we all need a dad joke to make us laugh once and a while \ `Wrps {rock/paper/scissors}`- Play RPS with the bot', inline: true},
             { name: ':tools: Utility Commands :tools:', value: '`Whelp`-  The commmand that brings this embed up! \ `Winvite`- Like the bot? invite it! \ `Wms`- Get the latency of the bot \ `Wping`- PONG!, Uptime', inline: true}
         )
