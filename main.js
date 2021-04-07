@@ -137,6 +137,9 @@ client.on('message', message =>{
     } else if (command === 'rune'){
         client.commands.get('rune').execute(message, args);
         
+    } else if (command === 'oracle'){
+        client.commands.get('oracle').execute(message, args);
+
     }
     
 });
