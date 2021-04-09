@@ -143,6 +143,42 @@ client.on('message', message =>{
     } else if (command === 'oracle-info'){
         client.commands.get('oracle-info').execute(message, args);
         
+    } else if (command === 'gemini'){
+        client.commands.get('gemini').execute(message, args);
+
+    } else if (command === 'aquarius'){
+        client.commands.get('aquarius').execute(message, args);
+
+    } else if (command === 'pisces'){
+        client.commands.get('pisces').execute(message, args);
+
+    } else if (command === 'aries'){
+        client.commands.get('aries').execute(message, args);
+
+    } else if (command === 'taurus'){
+        client.commands.get('taurus').execute(message, args);
+
+    } else if (command === 'cancer'){
+        client.commands.get('cancer').execute(message, args);
+
+    } else if (command === 'leo'){
+        client.commands.get('leo').execute(message, args);
+    
+    } else if (command === 'virgo'){
+        client.commands.get('virgo').execute(message, args);
+
+    } else if (command === 'libra'){
+        client.commands.get('libra').execute(message, args);
+
+    } else if (command === 'scorpio'){
+        client.commands.get('scorpio').execute(message, args);
+
+    } else if (command === 'sagittarius'){
+        client.commands.get('sagittarius').execute(message, args);
+        
+    } else if (command === 'capricorn'){
+        client.commands.get('capricorn').execute(message, args);
+        
     }
     
 });
