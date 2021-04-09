@@ -20,7 +20,8 @@ module.exports = {
          **Wnewmoon**- Gives you a list of 2021 New moons with the dates and horoscope 
          **Wprotection**- Get a full list of herbs and plants for protection 
          **Wsalt**- Gives you a small list of salts and there properties 
-         **Wshadow**- Get information on shadow work `)
+         **Wshadow**- Get information on shadow work 
+         **Woracle-info**- Gives info on oracles`)
         .addFields(
             { name: '\u200B', value: '\u200B' },
             { name: ':crystal_ball: Divination Commands :crystal_ball:', value: '`Wcoin`- flips a coin \ `Weightball`- Rolls a eight ball \ `Wcolor`- Gives you a color and its corrispondences \ `Wrune`- Get a rune and meaning \ `Woracle` - get a oracle reading every 12 hours!', inline: false },

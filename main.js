@@ -140,6 +140,9 @@ client.on('message', message =>{
     } else if (command === 'oracle'){
         client.commands.get('oracle').execute(message, args);
 
+    } else if (command === 'oracle-info'){
+        client.commands.get('oracle-info').execute(message, args);
+        
     }
     
 });
