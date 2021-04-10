@@ -1,4 +1,4 @@
-const client = require('./index');
+const client = require('./main');
 const MessageEmbed = require('discord.js').MessageEmbed;
 const got = require('got');
 const url = require('url');
