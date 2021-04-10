@@ -45,7 +45,7 @@ exports.embed = (title, description = '', fields = [], options = {}) => {
 
     return new MessageEmbed({ fields, video: options.video || url })
         .setTitle(title)
-        .setColor("#0")
+        .setColor("#D21F3C")
         .setDescription(description)
         .setURL(url)
         .setImage(options.image)
