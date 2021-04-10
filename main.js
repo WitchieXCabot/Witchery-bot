@@ -179,6 +179,9 @@ client.on('message', message =>{
     } else if (command === 'capricorn'){
         client.commands.get('capricorn').execute(message, args);
         
+    } else if (command === 'calc'){
+        client.commands.get('calc').execute(message, args);
+        
     }
     
 });
