@@ -9,7 +9,6 @@ module.exports = {
         .setTitle('Help; heres a list of my commands!')
         .setDescription(`our bot has very simple comands heres the list`)
         .setColor("#D21F3C")
-        .setThumbnail(message.author.displayAvatarURL ({ format: "png", dynamic: true }))
         .setTimestamp()
         .addField(':woman_mage: Witchy Commands :mage:', `**Wcleansing**- All the cleansing information you need 
          **Wevents**- Gives you a full list of 2021 celestial events 

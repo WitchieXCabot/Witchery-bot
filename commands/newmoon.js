@@ -9,7 +9,6 @@ module.exports = {
         let newmoon = new Discord.MessageEmbed()
       .setTitle(' 2021 New moons ')
       .setColor("#D21F3C")
-      .setThumbnail(message.author.displayAvatarURL ({ format: "png", dynamic: true }))
       .setTimestamp()
       .addField(` Names/Horoscopes `, `January 13 (in Capricorn)
       February 11 (in Aquarius)

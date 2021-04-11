@@ -10,7 +10,6 @@ module.exports = {
         .setTitle(' Salt uses ')
         .setURL('https://discord.gg/jAfKPFS5FW')
         .setColor("#D21F3C")
-        .setThumbnail(message.author.displayAvatarURL ({ format: "png", dynamic: true }))
         .setTimestamp()
         .addField(` ————Himalayan———— `, `~• Protects relationships
         ~• removes negative blackages and curses

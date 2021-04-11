@@ -9,7 +9,6 @@ module.exports = {
         let fullmoon = new Discord.MessageEmbed()
       .setTitle(' 2021 Full moons ')
       .setColor("#D21F3C")
-      .setThumbnail(message.author.displayAvatarURL ({ format: "png", dynamic: true }))
       .setTimestamp()
       .addField(` Names/dates/Horoscopes `, `January 28 (Wolf Moon in Leo)
       February 27 (Snow Moon in Virgo)

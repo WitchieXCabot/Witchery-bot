@@ -9,7 +9,6 @@ module.exports = {
         let events = new Discord.MessageEmbed()
       .setTitle(' 2021 Celestial Events ')
       .setColor("#D21F3C")
-      .setThumbnail(message.author.displayAvatarURL ({ format: "png", dynamic: true }))
       .setTimestamp()
       .addField(` Events `, `January 2-3: Quadrantids Meteor Shower 
 

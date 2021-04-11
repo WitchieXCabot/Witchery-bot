@@ -10,7 +10,6 @@ module.exports = {
         .setTitle(' Herbs and there Correspondences ')
         .setURL('https://discord.gg/wD3Yq8e')
         .setColor("#D21F3C")
-        .setThumbnail(message.author.displayAvatarURL ({ format: "png", dynamic: true }))
         .setTimestamp()
         .addField(`————Herbs————`, `~•Allspice- prosperity, luck, healing, energy
         ~•Basil - love, banishing, wealth, success, sympathy, protection; dispelling confusion, fears, and weaknesses

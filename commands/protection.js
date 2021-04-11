@@ -9,7 +9,6 @@ module.exports = {
         let protection = new Discord.MessageEmbed()
         .setTitle(' Protection herbs and plants')
         .setColor("#D21F3C")
-        .setThumbnail(message.author.displayAvatarURL ({ format: "png", dynamic: true }))
         .setTimestamp()
         .addField(`♡*✧•`, `Agrimony
         Aloe
