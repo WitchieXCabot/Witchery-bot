@@ -21,13 +21,12 @@ module.exports = {
          **Wprotection**- Get a full list of herbs and plants for protection 
          **Wsalt**- Gives you a small list of salts and there properties 
          **Wshadow**- Get information on shadow work 
-         **Woracle-info**- Gives info on oracles`)
+         **Woracle-info**- Gives info on oracles
+         **Winvite**- sends you my invite link!`)
         .addFields(
             { name: '\u200B', value: '\u200B' },
             { name: ':crystal_ball: Divination Commands :crystal_ball:', value: '`Wcoin`- flips a coin \ `Weightball`- Rolls a eight ball \ `Wcolor`- Gives you a color and its corrispondences \ `Wrune`- Get a rune and meaning \ `Woracle` - get a oracle reading every 12 hours! \ `W(horoscope)` - send you your daily horoscope **when ececuting dont include the commas** ex: `Wgemini`', inline: false },
-            { name: ':rofl: Fun Commands :rofl:', value: '`Wdadjoke`- we all need a dad joke to make us laugh once and a while \ `Wrps {rock/paper/scissors}`- Play RPS with the bot', inline: true},
-            { name: ':tools: Utility Commands :tools:', value: '`Whelp`-  The commmand that brings this embed up! \ `Winvite`- Like the bot? invite it! \ `Wms`- Get the latency of the bot \ `Wping`- PONG!, Uptime', inline: true}
-        )
+            { name: ':rofl: Fun Commands :rofl:', value: '`Wdadjoke`- we all need a dad joke to make us laugh once and a while \ `Wrps {rock/paper/scissors}`- Play RPS with the bot', inline: true})
         .setFooter(`have fun with our bot, we hope you learn alot`, message.author.displayAvatarURL({ format: "png", dynamic: true }));
        
         message.channel.send('Loading...').then(sent => {
