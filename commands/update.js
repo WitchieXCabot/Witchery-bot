@@ -9,7 +9,7 @@ module.exports = {
         .setTitle('Developers say')
         .setDescription(`Version 0.3.3 is released!!
          -Better divination 
-            - commands added
+            -commands added
                 -**Woracle**
                 -**W(horoscope)** Ex, Wgemini 
          -Improved API and general Latency
