@@ -31,7 +31,7 @@ module.exports = {
              Expect a lot more to come!`)
          .setColor("#D21F3C")
          .setTimestamp()
-         .setFooter(`Witchery©️ - 2021 Copyright©️
+         .setFooter(`   Witchery©️ - 2021 Copyright©️
          Witchery Wonders™️ - 2021 LLC`, message.author.displayAvatarURL({ format: "png", dynamic: true }));
         message.channel.send(update);
     }
