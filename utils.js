@@ -25,7 +25,7 @@ exports.formatNumber = (number) => {
 
 const randomFooter = () => {
     return exports.randomSelection([
-        '420 weed',
+        'Insert witchy thing here',
         'hi',
     ]);
 };

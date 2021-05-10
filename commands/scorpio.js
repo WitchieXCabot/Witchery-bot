@@ -7,6 +7,11 @@ module.exports = {
     name: 'scorpio',
     description: "Daily horoscope embed",
     execute: async (message, args) => {        
+        message.channel.send('<a:loading:841122743050698762> Loading...')
+        .then(msg => {
+                      msg.delete({ timeout: 900});
+                  })
+        .catch(console.error);
         const { horoscope } = await fetch('https://ohmanda.com/api/horoscope/scorpio/').then(response => response.json());
         const { sign } = await fetch('https://ohmanda.com/api/horoscope/scorpio/').then(response => response.json());
         const { date } = await fetch('https://ohmanda.com/api/horoscope/scorpio/').then(response => response.json());
