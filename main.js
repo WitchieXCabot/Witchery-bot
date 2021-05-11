@@ -183,6 +183,9 @@ client.on('message', message =>{
     } else if (command === 'calc'){
         client.commands.get('calc').execute(message, args);
         
+    } else if (command === 'horoscope'){
+        client.commands.get('horoscope').execute(message, args);
+        
     }
     
 });

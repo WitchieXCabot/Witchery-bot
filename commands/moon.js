@@ -5,7 +5,7 @@ module.exports = {
     name: 'moon',
     description: "this is a next moon",
     execute(message, args) {
-        message.channel.send(`The next full moon is on;
-        :full_moon: April 27 (Pink Moon in Scorpio)`)
+        message.channel.send(`The next new moon is on;
+        :new_moon: May 11 (in Taurus)`)
     }
 }
