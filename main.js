@@ -189,6 +189,9 @@ client.on('message', message =>{
     } else if (command === 'tarot'){
         client.commands.get('tarot').execute(message, args);
         
+    } else if (command === 'herbfind'){
+        client.commands.get('herbfind').execute(message, args);
+        
     }
     
 });
