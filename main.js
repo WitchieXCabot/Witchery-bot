@@ -25,23 +25,19 @@ for(const file of commandFiles){
 
 
 client.on('ready', () => {
-    try {
-      let serverIn = client.guilds.cache.size;
-      console.log(`${client.user.tag} successfully logged in! 
-      Servers: ${serverIn}`);
-      
-      function pickStatus() {
-        let status = ['Use Whelp for help!', 'witcherybot.xyz', 'Witchery 0.3.1!!!', 'Our prefix is W', `${client.guilds.cache.size} servers`];
-        let Status = Math.floor(Math.random() * status.length);
-  
-        client.user.setActivity(status[Status], {
-          type: "WATCHING"
-        });
-      };
-      setInterval(pickStatus, 9000);
-    } catch (err) {
-      console.log(err);
-    }
+    
+    let serverIn = client.guilds.cache.size;
+    console.log(`${client.user.tag} successfully logged in! 
+    Servers: ${serverIn}`);
+    
+    console.log("Servers:")
+    client.guilds.cache.forEach((guild) => {
+        console.log(" - " + guild.name)
+    })
+
+    var activities = [ `${client.guilds.cache.size} servers`, `Does magick`, `witcherybot.xyz`], i = 0;
+    setInterval(() => client.user.setActivity(`${prefix}help | ${activities[i++ % activities.length]}`, { type: "WATCHING" }),5000)   
+    
 });
   
 
