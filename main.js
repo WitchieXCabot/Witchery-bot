@@ -30,10 +30,6 @@ client.on('ready', () => {
     console.log(`${client.user.tag} successfully logged in! 
     Servers: ${serverIn}`);
     
-    console.log("Servers:")
-    client.guilds.cache.forEach((guild) => {
-        console.log(" - " + guild.name)
-    })
 
     var activities = [ `${client.guilds.cache.size} servers`, `Does magick`, `witcherybot.xyz`], i = 0;
     setInterval(() => client.user.setActivity(`${prefix}help | ${activities[i++ % activities.length]}`, { type: "WATCHING" }),5000)   

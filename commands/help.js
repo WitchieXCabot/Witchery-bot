@@ -50,9 +50,21 @@ module.exports = {
         **Server link:** https://discord.gg/SR8JanRqsv `)
         .setFooter(`check out ouf website! - http://www.witcherybot.xyz/ `)
         .setColor("#D21F3C")
-        message.react('<a:Check:841139955958808596> ');        
-       await message.author.send(help)
-       await message.author.send(support);
+        message.react('<a:Check:841139955958808596> ');      
+        
+        
+        let err = new Discord.MessageEmbed()
+        .setTitle('Error')
+        .setColor("#D21F3C")
+        .setDescription('\n`\`\`diff\n-WARNING: You have your messages turned off \n *** Cannot send messages to this user \`\`\` `\`\`diff\n+Turn on dm\'s and try again\`\`\`')
+
+
+        try {    
+            await message.author.send(help)
+            await message.author.send(support);
+        } catch(error) {
+            message.reply(err);
+        }
     
     }
 }
