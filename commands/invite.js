@@ -18,7 +18,7 @@ module.exports = {
 
 
         try{
-           await message.channel.send('My invite URL is:  \n`\`\` https://discord.com/oauth2/authorize?client_id=780341354379083797&scope=bot&permissions=4027055217 \`\`\`' && links);
+           await message.channel.send(`My invite URL is:  \`\`\` https://discord.com/oauth2/authorize?client_id=780341354379083797&scope=bot&permissions=4027055217 \`\`\` ${links}`);
         } catch(error) {
             message.reply(err)
         }
