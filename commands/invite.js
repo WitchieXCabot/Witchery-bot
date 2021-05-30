@@ -13,6 +13,7 @@ module.exports = {
 
         let links = new Discord.MessageEmbed()
         .addField(`\u200B`,`[Invite me](https://discord.com/oauth2/authorize?client_id=780341354379083797&scope=bot&permissions=4027055217) | [Vote](https://top.gg/bot/780341354379083797) | [Website](http://www.witcherybot.xyz/) | [Support Server](https://discord.gg/SR8JanRqsv)`)
+        .setColor("#D21F3C")
 
 
 
