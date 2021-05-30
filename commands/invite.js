@@ -4,7 +4,7 @@ module.exports = {
 
     name: 'invite',
     description: "this is to invite us to your server",
-    execute(message, args) {
+    execute: async (message, args) => {
 
         let err = new Discord.MessageEmbed()
         .setTitle('Error')
