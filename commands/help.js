@@ -35,22 +35,8 @@ module.exports = {
             \`Whoroscope\` - send you your daily horoscope`, inline: false },
             { name: ':rofl: Fun Commands :rofl:', value: `\`Wdadjoke\`- we all need a dad joke to make us laugh once and a while
              \`Wrps {rock/paper/scissors}\`- Play RPS with the bot`, inline: true})
-        .setFooter(`have fun with our bot, we hope you learn alot`, message.author.displayAvatarURL({ format: "png", dynamic: true }));
-
-
-
-        let support = new Discord.MessageEmbed()
-        .setTitle('Join the support server!')
-        .setURL(`https://discord.gg/SR8JanRqsv`)
-        .setDescription(`Need help? Something not working? want to support? Have a suggestion?
-        Well join our support server!!
-
-        *We are looking for staff and helpers!!*
-        
-        **Server link:** https://discord.gg/SR8JanRqsv `)
-        .setFooter(`check out ouf website! - http://www.witcherybot.xyz/ `)
-        .setColor("#D21F3C")
-        message.react('<a:Check:841139955958808596> ');      
+             .addField(`\u200B`,`[Invite me](https://discord.com/oauth2/authorize?client_id=780341354379083797&scope=bot&permissions=4027055217) | [Vote](https://top.gg/bot/780341354379083797) | [Website](http://www.witcherybot.xyz/) | [Support Server](https://discord.gg/SR8JanRqsv)`)
+             message.react('<a:Check:841139955958808596> ');      
         
         
         let err = new Discord.MessageEmbed()
@@ -60,8 +46,7 @@ module.exports = {
 
 
         try {    
-            await message.author.send(help)
-            await message.author.send(support);
+            await message.author.send(help);
         } catch(error) {
             message.reply(err);
         }
