@@ -115,9 +115,6 @@ client.on('message', message =>{
         const image = new Discord.MessageAttachment('./witcheryWonders PFP.png');
         message.channel.send('this is the bots pfp',image);
 
-    } else if (command === 'uptime'){
-        client.commands.get('uptime').execute(message, args);
-
     } else if(command === 'ping') {
         client.commands.get('ping').execute(message, args);
        
@@ -171,9 +168,6 @@ client.on('message', message =>{
         
     } else if (command === 'capricorn'){
         client.commands.get('capricorn').execute(message, args);
-        
-    } else if (command === 'calc'){
-        client.commands.get('calc').execute(message, args);
         
     } else if (command === 'horoscope'){
         client.commands.get('horoscope').execute(message, args);
