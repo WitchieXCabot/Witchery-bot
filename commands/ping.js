@@ -10,7 +10,7 @@ module.exports = {
           var ping = m.createdTimestamp - message.createdTimestamp;
           var yourping = new Date().getTime() - message.createdTimestamp
           
-          m.edit(`Your ping is ${ping}` + `\n` + `Api latency: ${yourping}` )
+          m.edit(`\n Your ping is \`${ping}\`` + `\n` + `Api latency: \`${yourping}\`` )
       });
   }
 }
