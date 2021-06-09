@@ -9,14 +9,8 @@ module.exports = {
       message.channel.send("Pinging...").then(m =>{
           var ping = m.createdTimestamp - message.createdTimestamp;
           var yourping = new Date().getTime() - message.createdTimestamp
-
-          var embed = new Discord.MessageEmbed()
-          .setAuthor("Pong!")
-          .setTitle(`Your ping is ${ping}`)
-          .addField(`Api latency: ${yourping}`, `Looks alright :)`)
-          .setColor("#D21F3C")
           
-          m.edit(embed)
+          m.edit( "Pong!" + `\n` + `\n Your ping is ${ping}` + `\n` + `Api latency: ${yourping}` )
       });
   }
 }
