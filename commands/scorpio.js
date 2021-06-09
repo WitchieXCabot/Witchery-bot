@@ -12,10 +12,7 @@ module.exports = {
                       msg.delete({ timeout: 900});
                   })
         .catch(console.error);
-        const { horoscope } = await fetch('https://ohmanda.com/api/horoscope/scorpio/').then(response => response.json());
-        const { sign } = await fetch('https://ohmanda.com/api/horoscope/scorpio/').then(response => response.json());
-        const { date } = await fetch('https://ohmanda.com/api/horoscope/scorpio/').then(response => response.json());
-
+        const { horoscope, sign, date } = await fetch('https://ohmanda.com/api/horoscope/scorpio/').then(response => response.json());
 
         let scorpio = new Discord.MessageEmbed()
         .setTitle(sign)

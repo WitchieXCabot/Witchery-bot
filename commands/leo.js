@@ -13,10 +13,7 @@ module.exports = {
                   })
         .catch(console.error);
            
-        const { horoscope } = await fetch('https://ohmanda.com/api/horoscope/leo/').then(response => response.json());
-        const { sign } = await fetch('https://ohmanda.com/api/horoscope/leo/').then(response => response.json());
-        const { date } = await fetch('https://ohmanda.com/api/horoscope/leo/').then(response => response.json());
-
+        const { horoscope, sign, date } = await fetch('https://ohmanda.com/api/horoscope/leo/').then(response => response.json());
 
         let leo = new Discord.MessageEmbed()
         .setTitle(sign)
