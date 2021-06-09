@@ -6,7 +6,7 @@ module.exports = {
     name: 'ping',
     description: "this is send you the uptime of the bot!",
     execute: async (message, args) => { 
-      var ping = m.createdTimestamp - message.createdTimestamp;
+      var ping = message.createdTimestamp - message.createdTimestamp;
       var yourping = new Date().getTime() - message.createdTimestamp
 
       var embed = new Discord.MessageEmbed()
