@@ -5,7 +5,7 @@ module.exports = {
     name: 'tarot',
     description: "this is a help embed",
     execute: async (message, args) => {
-    if (message.guild.id !== '793162542729134120' && message.guild.id !== '752356763268939876' && message.guid.id !== '790834414095040543') return message.reply('This command can only be used in `2` server/s.')
+    if (message.guild.id !== '793162542729134120' && message.guid.id !== '790834414095040543') return message.reply('This command can only be used in `2` server/s.')
 
     let card =  [
         {
