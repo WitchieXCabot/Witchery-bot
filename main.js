@@ -31,10 +31,9 @@ client.on('ready', () => {
     Servers: ${serverIn}`);
     
 
-    var activities = [ `${servers} servers`, `Does magick`, `witcherybot.xyz`, `Shards #2`], i = 0;
+    var activities = [ `${client.guilds.cache.size} servers`, `Does magick`, `witcherybot.xyz`, `Shards: 2`], i = 0;
     setInterval(() => client.user.setActivity(`${prefix}help | ${activities[i++ % activities.length]}`, { type: "WATCHING" }),8000)   
     
-    const servers = fetch(client.shard.fetchClientValues('guilds.cache.size'));
 });
   
 
@@ -172,11 +171,7 @@ client.on('message', message =>{
     } else if (command === 'herbfind'){
         client.commands.get('herbfind').execute(message, args);
         
-    } else if (command === 'servers'){
-        client.commands.get('servers').execute(message, args);
-        
     }
-    
 });
 
 
@@ -216,7 +211,7 @@ client.on('message', message => {
 			.then(results => {
 				const totalGuilds = results[0].reduce((acc, guildCount) => acc + guildCount, 0);
 				const totalMembers = results[1].reduce((acc, memberCount) => acc + memberCount, 0);
-				return message.channel.send(`Server count: ${totalGuilds}\nMember count: ${totalMembers}`);
+				return message.channel.send(`Shard ${shard.id + 1}\nServer count: ${totalGuilds}\nMember count: ${totalMembers}`);
 			})
 			.catch(console.error);
 	}
