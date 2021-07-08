@@ -30,9 +30,15 @@ client.on('ready', () => {
     console.log(`${client.user.tag} successfully logged in! 
     Servers: ${serverIn}`);
     
-
-    var activities = [ `${client.guilds.cache.size} servers`, `Does magick`, `witcherybot.xyz`, `Shards: 2`], i = 0;
-    setInterval(() => client.user.setActivity(`${prefix}help | ${activities[i++ % activities.length]}`, { type: "WATCHING" }),8000)   
+    var promises = [
+        client.shard.fetchClientValues('guilds.cache.size'),
+    ];
+    return Promise.all(promises)
+    .then(results => {
+        var totalGuilds = results[0].reduce((acc, guildCount) => acc + guildCount, 0);
+        var activities = [ `${totalGuilds} servers`, `Does magick`, `witcherybot.xyz`, `Shards: 2`], i = 0;
+        setInterval(() => client.user.setActivity(`${prefix}help | ${activities[i++ % activities.length]}`, { type: "WATCHING" }),8000)  
+    }) 
     
 });
   
@@ -202,16 +208,17 @@ client.on('message', message => {
 	var command = args.shift().toLowerCase();
 
 	if (command === 'stats') {
-		const promises = [
+		var promises = [
 			client.shard.fetchClientValues('guilds.cache.size'),
 			client.shard.broadcastEval('this.guilds.cache.reduce((acc, guild) => acc + guild.memberCount, 0)'),
-		];
+            client.shard.fetchClientValues('guilds.cache.size'),
+        ];
 
 		return Promise.all(promises)
 			.then(results => {
 				const totalGuilds = results[0].reduce((acc, guildCount) => acc + guildCount, 0);
 				const totalMembers = results[1].reduce((acc, memberCount) => acc + memberCount, 0);
-				return message.channel.send(`Shard ${shard.id + 1}\nServer count: ${totalGuilds}\nMember count: ${totalMembers}`);
+				return message.channel.send(`Server count: ${totalGuilds}\nMember count: ${totalMembers}`);
 			})
 			.catch(console.error);
 	}
