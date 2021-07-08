@@ -171,6 +171,9 @@ client.on('message', message =>{
     } else if (command === 'herbfind'){
         client.commands.get('herbfind').execute(message, args);
         
+    } else if (command === 'servers'){
+        client.commands.get('servers').execute(message, args);
+        
     }
     
 });
@@ -217,29 +220,6 @@ client.on('message', message => {
 			.catch(console.error);
 	}
 });
-
-client.on('message', message => {
-    if (!message.content.startsWith(prefix) || message.author.bot) return;
-
-    var args = message.content.slice(prefix.length).trim().split(/ +/);
-	var command = args.shift().toLowerCase();
-
-	if (command === 'servers') {
-
-        let values = await client.shard.broadcastEval(`
-        [
-            this.shard.id,
-            this.guilds.size
-        ]
-        `);
-    let finalString = "**SHARD STATUS**\n\n";
-    values.forEach((value) => {
-        finalString += "• SHARD #"+value[0]+" | ServerCount: "+value[1]+"\n";
-    });
-    return message.channel.send(finalString)
-    .catch(console.error);
-    }
-})
 
 
 
