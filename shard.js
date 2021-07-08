@@ -9,6 +9,6 @@ const manager = new Discord.ShardingManager('./main.js', {
   //autoSpawn: true,
   totalShards: 'auto',
 });
+manager.spawn();
 
 manager.on('shardCreate', shard => console.log(`Launching Shard ${shard.id + 1}`, { label: `Shard` }));
-manager.spawn();
