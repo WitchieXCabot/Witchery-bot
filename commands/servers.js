@@ -8,12 +8,7 @@ module.exports = {
     description: "server stats",
     execute: async (message, args) => {  
         // For each shard, get the shard ID and the number of guilds it owns
-        let values = await client.shard.broadcastEval(`
-        [
-            this.shard.id,
-            this.guilds.size
-        ]
-        `);
+        let values = await client.shard.broadcastEval(`this.shard.id, this.guilds.size`);
         // Make a final string which will be sent in the channel
         let finalString = "**SHARD STATUS**\n\n";
         // For each shard data

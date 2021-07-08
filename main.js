@@ -31,9 +31,10 @@ client.on('ready', () => {
     Servers: ${serverIn}`);
     
 
-    var activities = [ `${client.guilds.cache.size} servers`, `Does magick`, `witcherybot.xyz`], i = 0;
+    var activities = [ `${servers} servers`, `Does magick`, `witcherybot.xyz`, `Shards #2`], i = 0;
     setInterval(() => client.user.setActivity(`${prefix}help | ${activities[i++ % activities.length]}`, { type: "WATCHING" }),8000)   
     
+    const servers = await client.shard.fetchClientValues('guilds.cache.size');
 });
   
 
