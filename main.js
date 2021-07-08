@@ -32,17 +32,10 @@ client.on('ready', () => {
     
 
     var activities = [ `${client.guilds.cache.size} servers`, `Does magick`, `witcherybot.xyz`], i = 0;
-    setInterval(() => client.user.setActivity(`${prefix}help | ${activities[i++ % activities.length]}`, { type: "WATCHING" }),5000)   
+    setInterval(() => client.user.setActivity(`${prefix}help | ${activities[i++ % activities.length]}`, { type: "WATCHING" }),8000)   
     
 });
   
-
-
-const { ShardingManager } = require('discord.js');
-const manager = new ShardingManager('./bot.js', { token: 'NzgwMzQxMzU0Mzc5MDgzNzk3.X7trhA.iVuTbhwlRt1jagKgb_d61NGnk5E' });
-
-manager.on('shardCreate', shard => console.log(`Launched shard ${shard.id}`));
-manager.spawn();
 
 
 
@@ -203,10 +196,27 @@ client.on('message', message => {
 
 
 
+client.on('message', message => {
+	if (!message.content.startsWith(prefix) || message.author.bot) return;
 
+	const args = message.content.slice(prefix.length).trim().split(/ +/);
+	const command = args.shift().toLowerCase();
 
+	if (command === 'stats') {
+		const promises = [
+			client.shard.fetchClientValues('guilds.cache.size'),
+			client.shard.broadcastEval('this.guilds.cache.reduce((acc, guild) => acc + guild.memberCount, 0)'),
+		];
 
-
+		return Promise.all(promises)
+			.then(results => {
+				const totalGuilds = results[0].reduce((acc, guildCount) => acc + guildCount, 0);
+				const totalMembers = results[1].reduce((acc, memberCount) => acc + memberCount, 0);
+				return message.channel.send(`Server count: ${totalGuilds}\nMember count: ${totalMembers}`);
+			})
+			.catch(console.error);
+	}
+});
 
 
 
