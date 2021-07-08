@@ -1,12 +1,12 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const prefix = 'W';
-const TOKEN  = "NzgwMzQxMzU0Mzc5MDgzNzk3.X7trhA.iVuTbhwlRt1jagKgb_d61NGnk5E"
+const { TOKEN }  = require('./config');
 
 
 const manager = new Discord.ShardingManager('./main.js', {
   TOKEN: TOKEN,
-  autoSpawn: true,
+  //autoSpawn: true,
   totalShards: 'auto',
 });
 
