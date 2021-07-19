@@ -1,4 +1,4 @@
-var Discord = require('discord.js')
+const Discord = require('discord.js')
 const fs = require("fs")
 const { PREFIX } = require("../../settings/config")
 const db = require('quick.db')
@@ -28,7 +28,7 @@ run: async (bot, message, args) => {
 
 
 if(message.content.toLowerCase() === `${prefix}help`){
-    var embed = new Discord.MessageEmbed()
+    const help = new Discord.MessageEmbed()
     .setThumbnail(bot.user.displayAvatarURL())
     .setAuthor(`${message.guild.me.displayName} Help`, message.guild.iconURL())
     .setTitle('**Help Menu: [all]**')
@@ -39,7 +39,7 @@ if(message.content.toLowerCase() === `${prefix}help`){
     .addField(`**util**`, `1) **Prefix** \`[${prefix}help prefix - for more info]\`\n2) **Help** \`[${prefix}help - for more info]\`\n3) **invite** \`[${prefix}invite - Invite the bot to your server]\``)
     .addField(`**Fun**`, `1) **Calc** \`[${prefix}calc <math-expression> -  solvs your math hw]\`\n2) **Dad joke** \`[${prefix}dadjoke - hehe Dad jokes]\``)
     .addField(`\u200B`,`[Invite me](https://discord.com/oauth2/authorize?client_id=780341354379083797&scope=bot&permissions=4027055217) | [Vote](https://top.gg/bot/780341354379083797) | [Website](http://www.witcherybot.xyz/) | [Support Server](https://discord.gg/SR8JanRqsv) | [Patreon](https://www.patreon.com/WitcheryBot)`)
-    message.channel.send(embed);
+    message.channel.send(help);
 }
 
 else {
