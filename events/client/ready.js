@@ -6,7 +6,7 @@ const { MessageEmbed } = require("discord.js")
 module.exports = async bot => {
 
     let serverIn = client.guilds.cache.size;
-    console.log(`${client.user.tag} successfully logged in! 
+    console.log(`Witchery successfully logged in! 
     Servers: ${serverIn}`);
 
     var promises = [
