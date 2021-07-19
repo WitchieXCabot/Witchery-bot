@@ -1,0 +1,37 @@
+Permissions, Usage Rights, Etc::
+
+These rights extend only to those who have purchased this bundle at $15 or higher on itch.io
+
+-You may use this in any commercial project.
+-You may NOT distrubute or resell the individual images as is.  
+    --If possible, please avoid using them in web pages in a format that allows users to easily download the individual images. Having them part of a browser game or flash feature is fine. 
+-If your project has a credits page, please list me as the artist of these cards. 
+-You may edit the cards as you please
+
+----------------------------------------------------
+
+Other Notes:
+
+-Flash Reveal is a sprite sheet that can be used as an effect that reveals cards. This sheet is 4 frames across and 2 frames down. The third frame of this animation is completely opaque, therefore you can change out the card face beneath it mid-animation. You can view it in action on the itch.io page for this package.
+
+-A document of Card Meanings is included for your convenience. I've made it pretty simplistic so you may wish to do deeper research on card meanings on your own.
+
+-Two sizes have been included (1x which is 100% size at 79 x 139, and 2x which is doubled) but if you need to resize them again, be sure to have the resampling mode listed as "Nearest Neighbor" in your photo editing software for the best results. Some game engines are capable of resizing pixel art without affecting the crisp pixel look as well.
+
+
+----------------------------------------------------
+
+Contact:
+
+email: sp.seaking@gmail.com
+tumblr: http://chee-seekins.tumblr.com
+discord: chee#3091
+
+Please don't hesitate to ask any questions about this package or report any errors!
+
+----------------------------------------------------
+
+
+All images in this collection © Sarah "Chee" Seekins, 2016
+
+These notes were last updated October, 2017 

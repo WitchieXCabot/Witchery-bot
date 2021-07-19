@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="yes"?>
+<OrphalesePackData>
+  <tblPackInfo>
+    <PackName>Crystal Art Oracle</PackName>
+    <Publisher />
+    <Author />
+    <NoCards>67</NoCards>
+    <Description />
+    <TransparentRegions>0</TransparentRegions>
+    <CurveFactor>0</CurveFactor>
+    <URL />
+    <Copyright />
+    <ApplyPercentage>false</ApplyPercentage>
+    <PercentReversed>0</PercentReversed>
+    <DeckHeight>-1</DeckHeight>
+    <SpecificBackground>true</SpecificBackground>
+    <BackgroundFormColor>-16777216</BackgroundFormColor>
+    <BackgroundImagePosition>Center</BackgroundImagePosition>
+    <BackOfCard />
+  </tblPackInfo>
+</OrphalesePackData>

@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <VersionData>
+    <Version>9.3</Version>
+  </VersionData>
+  <tblCardInfo>
+    <Index>0</Index>
+    <Notes />
+    <NotesReversed />
+  </tblCardInfo>
+  <tblCardInfo>
+    <Index>12</Index>
+    <Notes />
+    <NotesReversed />
+  </tblCardInfo>
+</NewDataSet>
