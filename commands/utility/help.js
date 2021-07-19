@@ -27,7 +27,7 @@ run: async (bot, message, args) => {
     };
 
 
-if(message.content.toLowerCase() === `${prefix}help`){
+if(message.content === `${prefix}help`){
     const help = new Discord.MessageEmbed()
     .setThumbnail(bot.user.displayAvatarURL())
     .setAuthor(`${message.guild.me.displayName} Help`, message.guild.iconURL())
