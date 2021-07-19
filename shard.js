@@ -6,5 +6,5 @@ const manager = new Discord.ShardingManager('./index.js', {
   totalShards: 2
 });
 
-manager.on('shardCreate', shard => console.log(`Launching Shard ${shard.id + 1}`, { label: `Shard` }));
+manager.on('shardCreate', shard => console.log(`Launching Shard ${shard.id + 1}`));
 manager.spawn();
