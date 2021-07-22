@@ -7,4 +7,4 @@ const manager = new Discord.ShardingManager('./index.js', {
 });
 
 manager.on('shardCreate', shard => console.log(`Launching Shard ${shard.id + 1}`));
-manager.spawn();
+manager.spawn(undefined, undefined, -1);
