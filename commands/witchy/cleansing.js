@@ -46,7 +46,7 @@ config: {
         else {
             var cleansing = new MessageEmbed()
         .setTitle(' Cleansing ')
-        .setURL('https://discord.gg/jAfKPFS5FW')
+        .setURL('https://discord.gg/6huDQTNexA')
         .setColor("#D21F3C")
         .addField(`————History————`, `~• Cleansing is a way or removing negative or unwanted energy, spirits and imprints from objects or a space. There are many simple rituals and actions that are done to cleanse. You can use as many or as few as you like and create you own cleansing methods/rituals.`)
         .addField(`————Yourself————`, `~• Brushing your hair in the morning

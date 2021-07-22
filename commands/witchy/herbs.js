@@ -84,7 +84,7 @@ run: async (bot, message, args) => {
         else {
             var herbs = new MessageEmbed()
             .setTitle(' Herbs and there Correspondences ')
-            .setURL('https://discord.gg/wD3Yq8e')
+            .setURL('https://discord.gg/6huDQTNexA')
             .setColor("#D21F3C")
             .addField(`————Herbs————`, `~•Allspice- prosperity, luck, healing, energy
             ~•Basil - love, banishing, wealth, success, sympathy, protection; dispelling confusion, fears, and weaknesses

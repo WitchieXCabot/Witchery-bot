@@ -50,7 +50,7 @@ run: async (bot, message, args) => {
         else { 
             var salt = new MessageEmbed()
             .setTitle(' Salt uses ')
-            .setURL('https://discord.gg/jAfKPFS5FW')
+            .setURL('https://discord.gg/6huDQTNexA')
             .setColor("#D21F3C")
             .addField(` ————Himalayan———— `, `~• Protects relationships
             ~• removes negative blackages and curses

@@ -122,6 +122,7 @@ config: {
         
             var embed = new MessageEmbed()
                 .setTitle('**Protection**')
+                .setURL('https://discord.gg/6huDQTNexA')
                 .setColor("#D21F3C") // Set the color
                 .setFooter(`Page ${page} of ${pages.length}`)
                 .setDescription(pages[page-1])
