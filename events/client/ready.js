@@ -19,7 +19,7 @@ module.exports = async bot => {
 
         console.log(`${bot.user.username} is available now!`)
 
-        var activities = [ `${totalGuilds} servers`, `Does Magick`, 'Shards: 2', 'Whelp all' ], i = 0;
-        setInterval(() => bot.user.setActivity(`${PREFIX}help | ${activities[i++ % activities.length]}`, { type: "WATCHING" }),9000)
+        var activities = [ `1,080+ servers`, `Does Magick`, 'Shards: 2', 'Whelp' ], i = 0;
+        setInterval(() => bot.user.setActivity(`Whelp | ${activities[i++ % activities.length]}`, { type: "WATCHING" }),9000)
     }) 
 };
